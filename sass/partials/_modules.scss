@@ -1,0 +1,59 @@
+.about,.center{
+    &-s1{
+        background-position: center!important;
+    }
+}
+.courses,.index,.instructors{
+    &-s1{
+        background-color: #aaa !important;
+        background-blend-mode: multiply;
+        background-position: center!important;
+    }
+}
+
+@media all and(max-width:767px){
+    .about{
+        &-s1,&-s2{
+            & *{
+                color: #fff !important;
+                text-shadow: $text-shadow;
+            }
+            background-color: #aaa !important;
+            background-blend-mode: multiply;
+        }
+        &-s1{
+            background-position: left!important;
+        }
+        &-s2{
+            background-position: right!important;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            & *{
+                color: #fff !important;
+                text-shadow: $text-shadow;
+            }
+            background-color: #aaa !important;
+            background-blend-mode: multiply;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+        &-s2{
+            background-position: left!important;
+        }
+    }
+    .index{
+        &-s1{
+            background-position: right!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            background-color: #333;
+            border: 1px solid #555;
+            padding-right: 10px;
+        }
+    }
+}
