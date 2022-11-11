@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton-Regular.ttf");
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -567,51 +571,73 @@ body, html {
   background-position: center !important;
 }
 
+/* line 13, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "Anton";
+  letter-spacing: 2px;
+}
+
+/* line 17, ../sass/partials/_modules.scss */
+header {
+  z-index: 10;
+}
+
+/* line 20, ../sass/partials/_modules.scss */
+textarea {
+  resize: none;
+}
+
+@media all and (orientation: portrait) {
+  /* line 24, ../sass/partials/_modules.scss */
+  .index-s1 {
+    background-position-x: right !important;
+  }
+}
 @media all and (max-width: 767px) {
-  /* line 16, ../sass/partials/_modules.scss */
+  /* line 30, ../sass/partials/_modules.scss */
   .about-s1, .about-s2 {
     background-color: #aaa !important;
     background-blend-mode: multiply;
   }
-  /* line 17, ../sass/partials/_modules.scss */
+  /* line 31, ../sass/partials/_modules.scss */
   .about-s1 *, .about-s2 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
-  /* line 24, ../sass/partials/_modules.scss */
+  /* line 38, ../sass/partials/_modules.scss */
   .about-s1 {
     background-position: left !important;
   }
-  /* line 27, ../sass/partials/_modules.scss */
+  /* line 41, ../sass/partials/_modules.scss */
   .about-s2 {
     background-position: right !important;
   }
 
-  /* line 32, ../sass/partials/_modules.scss */
+  /* line 46, ../sass/partials/_modules.scss */
   .contact-s1, .contact-s2 {
     background-color: #aaa !important;
     background-blend-mode: multiply;
   }
-  /* line 33, ../sass/partials/_modules.scss */
+  /* line 47, ../sass/partials/_modules.scss */
   .contact-s1 *, .contact-s2 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
-  /* line 40, ../sass/partials/_modules.scss */
+  /* line 54, ../sass/partials/_modules.scss */
   .contact-s1 {
     background-position: right !important;
   }
-  /* line 43, ../sass/partials/_modules.scss */
+  /* line 57, ../sass/partials/_modules.scss */
   .contact-s2 {
     background-position: left !important;
   }
 
-  /* line 48, ../sass/partials/_modules.scss */
+  /* line 62, ../sass/partials/_modules.scss */
   .index-s1 {
     background-position: right !important;
   }
 
-  /* line 53, ../sass/partials/_modules.scss */
+  /* line 67, ../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #333;
     border: 1px solid #555;
